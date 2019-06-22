@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListItemActivity5">
+
+
+    <TextView
+        android:id="@+id/selection_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="BOOK PUBLISHED TICKET"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="127"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <Spinner
+        android:id="@+id/train_source_spinner_b"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:padding="10dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/city_arrays"
+        app:layout_constraintBottom_toTopOf="@+id/train_destination_spinner_b"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="870"
+        />
+
+    <Spinner
+        android:id="@+id/train_destination_spinner_b"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:padding="10dp"
+        android:entries="@array/city_array"
+        app:layout_constraintBottom_toTopOf="@+id/train_number_spinner_b"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="954"
+        />
+
+    <Spinner
+        android:id="@+id/train_number_spinner_b"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:padding="10dp"
+        android:entries="@array/train_arrays"
+        app:layout_constraintBottom_toTopOf="@+id/selectiontextview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="954" />
+
+    <TextView
+        android:id="@+id/selectiontextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="AMOUNT : 310"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/train_book"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="127"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <Button
+        android:id="@+id/train_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:text="BOOK"
+        android:textColor="#FFFFFF"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_conversion_wrapHeight="169"
+        tools:layout_conversion_wrapWidth="340" />
+
+
+</android.support.constraint.ConstraintLayout>

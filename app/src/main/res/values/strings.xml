@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">SMART SHARE</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="country_prompt">Choose a city</string>
+    <string-array name="city_arrays">
+        <item>Src</item>
+        <item>Pune</item>
+        <item>Bhopal</item>
+        <item>Lucknow</item>
+        <item>Nagpur</item>
+        <item>Indore</item>
+    </string-array>
+    <string name="event">Choose a event</string>
+        <string-array name="event">
+        <item>Football match</item>
+        <item>Travel</item>
+        <item>Movies</item>
+        <item>Cricket match</item>
+        <item>Music Concert</item>
+    </string-array>
+    <string name="movie_prompt">Choose a movie</string>
+    <string-array name="movie_arrays">
+        <item>Football Matches</item>
+        <item>FIFA world cup</item>
+        <item>Chelsea F.C. league</item>
+        <item>EFL Cup</item>
+        <item>Premier League</item>
+        <item>UEFA Europa League</item>
+    </string-array>
+    <string name="movie">START</string>
+    <string-array name="movie">
+        <item>START TIME</item>
+        <item>First half</item>
+        <item>Interval</item>
+    </string-array>
+    <string name="country_prompt1">Choose a city</string>
+    <string-array name="city_array">
+        <item>Dest</item>
+        <item>Mumbai</item>
+        <item>Bhopal</item>
+        <item>Indore</item>
+        <item>Badnera</item>
+        <item>Delhi</item>
+        <item>Amristar</item>
+    </string-array>
+    <string name="movie1">START</string>
+    <string-array name="movie1">
+        <item>END TIME</item>
+        <item>Interval</item>
+        <item>Second half</item>
+           </string-array>
+    <string name="train">Choose a train</string>
+    <string-array name="train_arrays">
+        <item>Train number</item>
+        <item>MAHALAXMI EXPRESS </item>
+        <item>Pune NAGPUR EXPRESS</item>
+        <item>PA LUCKNOW EXPRESS</item>
+        <item>GODVARI EXPRESS</item>
+        <item>SUPER FAST EXPRESS</item>
+    </string-array>
+</resources>

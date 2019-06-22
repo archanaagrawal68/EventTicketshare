@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context=".ListItemActivity3">
+
+
+    <TextView
+        android:id="@+id/selection_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="PUBLISH TRAIN TICKET"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="127"
+        tools:layout_conversion_wrapWidth="1080" />
+
+    <Spinner
+        android:id="@+id/train_source_spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:padding="16dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/city_arrays"
+        app:layout_constraintBottom_toTopOf="@+id/train_destination_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="870"
+         />
+
+    <Spinner
+        android:id="@+id/train_destination_spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:padding="16dp"
+        android:entries="@array/city_array"
+        app:layout_constraintBottom_toTopOf="@+id/train_number_spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="954"
+        />
+
+    <Spinner
+        android:id="@+id/train_number_spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:padding="16dp"
+        android:entries="@array/train_arrays"
+        app:layout_constraintBottom_toTopOf="@+id/train_publish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="954" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL"
+        app:layout_constraintBottom_toBottomOf="@+id/radioButton1"
+        app:layout_constraintLeft_toRightOf="@+id/radioButton1"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="244" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/train_number_spinner"
+        android:checked="true"
+        android:layout_marginTop="24dp"
+        android:text="PUBLISHED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/train_number_spinner"
+        tools:layout_conversion_wrapHeight="84"
+        tools:layout_conversion_wrapWidth="276" />
+
+    <Button
+        android:id="@+id/train_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="PUBLISH"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:padding="16dp"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_conversion_wrapHeight="169"
+        tools:layout_conversion_wrapWidth="340"/>
+
+
+</android.support.constraint.ConstraintLayout>
